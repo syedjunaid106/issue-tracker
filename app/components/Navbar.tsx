@@ -25,9 +25,9 @@ const Navbar = () => {
         <ul className='flex space-x-6'>
             {navs.map((data,index)=>
                 <Link key={index} className={classNames({
-                    'text-zinc-400':currentPath === data.href,
-                    'text-zinc-50':currentPath !== data.href,
-                    'hover:text-zinc-500 transition-colors':true
+                    'text-zinc-800':currentPath === data.href,
+                    'text-zinc-600':currentPath !== data.href,
+                    'hover:text-zinc-950 transition-colors font-bold':true
                 })} href={data.href}>
                     {data.label}
                 </Link>)}
