@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`bg-slate-50 ${inter.className }`} >
         <Theme>
         <Navbar/>
-        <main>
+        <main className="p-5">
         {children}
         </main>
         </Theme>
